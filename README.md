@@ -1,4 +1,4 @@
 namegame
 ========
 
-Thor Bossoyt and mine fun little app for fall 2014
+Thor, Jakob and Roberts fun little app for fall 2014
