@@ -13,6 +13,10 @@ class ToolViewController: UIViewController { // should the viewController also b
 
     @IBOutlet var textView: UITextView!
     // 'view' implicitly defined here?
+    @IBOutlet var imageListener: UITapGestureRecognizer!
+    @IBAction func imageTapped(sender: AnyObject) {
+        print("I got tapped")
+    }
 
     // Model connection
     let tipCalc = TipCalculatorModel(total: 100, percent: 0.1)
@@ -21,6 +25,7 @@ class ToolViewController: UIViewController { // should the viewController also b
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         refreshUI();
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -29,9 +34,26 @@ class ToolViewController: UIViewController { // should the viewController also b
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+//  OBJ>c
+//    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapDetected)];
+//    singleTap.numberOfTapsRequired = 1;
+//    [preArrowImage setUserInteractionEnabled:YES];
+//    [preArrowImage addGestureRecognizer:singleTap];
+//    
+//    -(void)tapDetected{
+//    NSLog(@"single Tap on imageview");
+//    
+//    }
+    
+    
     func refreshUI() {
-        self.textView.text = "Defualt text!"
-
+        self.textView.text = "Detta är thor!"
+        print("h'r 'r thor")
+        // set up image click listener
+        self.imageListener.numberOfTapsRequired = 1;
+        
     }
+    
+    
+    
 }

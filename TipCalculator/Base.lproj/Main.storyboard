@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Tip calculator-->
@@ -55,10 +56,6 @@
                                     <action selector="taxPercentageChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="C64-em-1De"/>
                                 </connections>
                             </slider>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hi8-zg-uGJ">
-                                <rect key="frame" x="30" y="202" width="541" height="371"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qu-IN-raX">
                                 <rect key="frame" x="154" y="164" width="65" height="30"/>
                                 <state key="normal" title="NextView">
@@ -68,6 +65,10 @@
                                     <segue destination="cFf-Y8-2B8" kind="show" id="nP9-d1-Bs1"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="hi8-zg-uGJ">
+                                <rect key="frame" x="30" y="202" width="541" height="371"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -115,8 +116,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2RL-Hv-3Wz">
-                                <rect key="frame" x="16" y="72" width="517" height="308"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2RL-Hv-3Wz">
+                                <rect key="frame" x="16" y="72" width="435" height="225"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration" label="jakobs label for text">
                                     <bool key="isElement" value="NO"/>
@@ -125,14 +126,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="thor.png" translatesAutoresizingMaskIntoConstraints="NO" id="qE4-O4-3Vy">
+                                <rect key="frame" x="16" y="315" width="168" height="213"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BNs-xC-0yk" appends="YES" id="def-8w-jFi"/>
+                                </connections>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qE4-O4-3Vy" firstAttribute="top" secondItem="2RL-Hv-3Wz" secondAttribute="bottom" constant="28" id="ON9-OF-5cI"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="qE4-O4-3Vy" secondAttribute="bottom" constant="-151" id="mlR-iF-w0q"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageListener" destination="BNs-xC-0yk" id="r1S-gr-MDu"/>
                         <outlet property="textView" destination="2RL-Hv-3Wz" id="6Zy-HG-jij"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WK6-Yt-TPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="BNs-xC-0yk">
+                    <connections>
+                        <action selector="imageTapped:" destination="cFf-Y8-2B8" id="zxk-7R-EmH"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1257" y="1199"/>
         </scene>
@@ -155,4 +173,7 @@
             <point key="canvasLocation" x="440" y="896"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="thor.png" width="337" height="426"/>
+    </resources>
 </document>
