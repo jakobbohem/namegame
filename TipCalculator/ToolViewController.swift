@@ -11,7 +11,8 @@ import UIKit
 
 class ToolViewController: UIViewController { // should the viewController also be the data source??
 
-    @IBOutlet weak var textView: UITextView!
+    @IBOutlet var textView: UITextView!
+    // 'view' implicitly defined here?
 
     // Model connection
     let tipCalc = TipCalculatorModel(total: 100, percent: 0.1)

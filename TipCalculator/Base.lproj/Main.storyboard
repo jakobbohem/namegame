@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="14A386b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zSJ-gP-mMI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zSJ-gP-mMI">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Tip calculator-->
@@ -65,7 +65,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mEt-m9-UfW" kind="show" identifier="toNextView" id="wfR-0N-l9E"/>
+                                    <segue destination="cFf-Y8-2B8" kind="show" id="nP9-d1-Bs1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -104,34 +104,37 @@
             <point key="canvasLocation" x="1139" y="427"/>
         </scene>
         <!--Tool View Controller-->
-        <scene sceneID="cSc-NV-tp9">
+        <scene sceneID="k3m-yH-z4c">
             <objects>
-                <viewController id="mEt-m9-UfW" customClass="ToolViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cFf-Y8-2B8" customClass="ToolViewController" customModule="TipCalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jvf-Cu-lgz"/>
-                        <viewControllerLayoutGuide type="bottom" id="dul-VW-X83"/>
+                        <viewControllerLayoutGuide type="top" id="fOB-44-G0A"/>
+                        <viewControllerLayoutGuide type="bottom" id="BVr-ic-PZ8"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RRE-RO-V6m" customClass="ToolViewController">
+                    <view key="view" contentMode="scaleToFill" id="1jc-C6-EL4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Ud-fT-jjv">
-                                <rect key="frame" x="16" y="81" width="568" height="410"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2RL-Hv-3Wz">
+                                <rect key="frame" x="16" y="72" width="517" height="308"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration" label="jakobs label for text">
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="textView" destination="5Ud-fT-jjv" id="mTQ-yv-rLC"/>
-                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="2RL-Hv-3Wz" id="6Zy-HG-jij"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lIw-0X-Cj5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WK6-Yt-TPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1210" y="1285"/>
+            <point key="canvasLocation" x="1257" y="1199"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A2K-wu-sgs">

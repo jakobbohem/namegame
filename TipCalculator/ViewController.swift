@@ -14,11 +14,13 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource { // should the viewController also be the data source??
     
+    // exclamation marks is swifts way of saying it assumes these values to be set or the app will crash!
+    // " implicitly unwrapped "
     @IBOutlet var totalTextField: UITextField!
     @IBOutlet var taxSlider: UISlider!
     @IBOutlet var taxLabel: UILabel!
     //    @IBOutlet var resultsTextView: UITextView!
-    @IBOutlet weak var tableView: UITableView! // why weak?
+    @IBOutlet var tableView: UITableView! // why weak?
     
     
     // Model connection
@@ -65,12 +67,11 @@ class ViewController: UIViewController, UITableViewDataSource { // should the vi
     }
     
     //TableViewDataSource:
-    func tableView(tableView: UITableView!, numberOfRowsInSection section: Int) -> Int
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return sortedKeys.count
     }
-    
-    func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.Value2, reuseIdentifier: nil)
         let tipPercent = sortedKeys[indexPath.row]
         
@@ -79,7 +80,7 @@ class ViewController: UIViewController, UITableViewDataSource { // should the vi
         let total = possibleTips[tipPercent]!.1
         
         cell.textLabel.text = "\(tipPercent)%:"
-        cell.detailTextLabel.text = String(format: "Tip: $%0.2f, Total: $%0.2f", tipAmount, total)
+        cell.detailTextLabel?.text = String(format: "Tip: $%0.2f, Total: $%0.2f", tipAmount, total)
         return cell
         
     }
