@@ -12,22 +12,34 @@
 	<dict>
 		<key>5499B10D457F3B9A15B9560E568830DD87178807</key>
 		<string>https://github.com/jakobbohem/swiftTutor.git</string>
+		<key>FA3F68F3728C6724B1A4E50D25E20CEFC4C73550</key>
+		<string>https://github.com/jakobbohem/namegame.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TipCalculator.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5499B10D457F3B9A15B9560E568830DD87178807</key>
+		<string>../../../swiftTutor</string>
+		<key>FA3F68F3728C6724B1A4E50D25E20CEFC4C73550</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/jakobbohem/swiftTutor.git</string>
+	<string>https://github.com/jakobbohem/namegame.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5499B10D457F3B9A15B9560E568830DD87178807</string>
+	<string>FA3F68F3728C6724B1A4E50D25E20CEFC4C73550</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FA3F68F3728C6724B1A4E50D25E20CEFC4C73550</string>
+			<key>IDESourceControlWCCName</key>
+			<string>namegame</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

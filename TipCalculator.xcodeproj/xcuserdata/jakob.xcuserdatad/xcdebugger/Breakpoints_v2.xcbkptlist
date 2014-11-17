@@ -2,4 +2,108 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TipCalculator/ToolViewController.swift"
+            timestampString = "437955698.64399"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ToolViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipCalculator.ToolViewController.textView.getter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextView&gt;"
+                  moduleName = "TipCalculator"
+                  urlString = "file:///Users/jakob/Projects/Netlight/namegame/TipCalculator/ToolViewController.swift"
+                  timestampString = "437955699.831214"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipCalculator.ToolViewController.textView.setter : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextView&gt;"
+                  moduleName = "TipCalculator"
+                  urlString = "file:///Users/jakob/Projects/Netlight/namegame/TipCalculator/ToolViewController.swift"
+                  timestampString = "437955699.83147"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipCalculator.ToolViewController.textView.materializeForSet : Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.UITextView&gt;"
+                  moduleName = "TipCalculator"
+                  urlString = "file:///Users/jakob/Projects/Netlight/namegame/TipCalculator/ToolViewController.swift"
+                  timestampString = "437955699.831643"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipCalculator.ToolViewController.init (TipCalculator.ToolViewController.Type)(nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;ObjectiveC.NSBundle&gt;) -&gt; TipCalculator.ToolViewController"
+                  moduleName = "TipCalculator"
+                  urlString = "file:///Users/jakob/Projects/Netlight/namegame/TipCalculator/ToolViewController.swift"
+                  timestampString = "437955699.831819"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipCalculator.ToolViewController.init (TipCalculator.ToolViewController.Type)() -&gt; TipCalculator.ToolViewController"
+                  moduleName = "TipCalculator"
+                  urlString = "file:///Users/jakob/Projects/Netlight/namegame/TipCalculator/ToolViewController.swift"
+                  timestampString = "437955699.832033"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TipCalculator.ToolViewController.init (TipCalculator.ToolViewController.Type)(coder : ObjectiveC.NSCoder) -&gt; TipCalculator.ToolViewController"
+                  moduleName = "TipCalculator"
+                  urlString = "file:///Users/jakob/Projects/Netlight/namegame/TipCalculator/ToolViewController.swift"
+                  timestampString = "437955699.832207"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
