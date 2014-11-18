@@ -10,7 +10,7 @@ import Foundation
 
 class BabyUnicornDataSource {
     
-    private var babyUnicorns : [BabyUnicorn] = [BabyUnicorn]()
+    var babyUnicorns : [BabyUnicorn] = [BabyUnicorn]()
     
     
     var count : Int {
@@ -45,4 +45,5 @@ class BabyUnicornDataSource {
     func unicornWithFirstName(name : String, andLastName lastName: String) {
         println("hehe")
     }
+    
 }
