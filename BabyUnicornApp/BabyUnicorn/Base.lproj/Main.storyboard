@@ -12,12 +12,86 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="pGg-6v-bdr" kind="relationship" relationship="rootViewController" id="RxB-wf-QIq"/>
+                        <segue destination="5gI-OT-ebQ" kind="relationship" relationship="rootViewController" id="TfE-oH-4Em"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eq9-QA-ai8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-148" y="64"/>
+            <point key="canvasLocation" x="-412" y="-272"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Hry-bu-ZpJ">
+            <objects>
+                <viewController id="5gI-OT-ebQ" customClass="ViewController" customModule="BabyUnicorn" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LoV-X6-gF3"/>
+                        <viewControllerLayoutGuide type="bottom" id="5Qp-7n-y14"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dya-OD-e4b">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oet-RJ-ZIB">
+                                <rect key="frame" x="35" y="64" width="300" height="300"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DxN-FP-o6X">
+                                <rect key="frame" x="59" y="436" width="250" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button1Action:" destination="5gI-OT-ebQ" eventType="touchUpInside" id="IRk-R4-S0b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNh-z6-p5n">
+                                <rect key="frame" x="59" y="474" width="250" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button2Action:" destination="5gI-OT-ebQ" eventType="touchUpInside" id="9UU-jB-6EU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTh-54-bbD">
+                                <rect key="frame" x="59" y="512" width="250" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button3Action:" destination="5gI-OT-ebQ" eventType="touchUpInside" id="Nzh-1h-Von"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwq-I4-ycf">
+                                <rect key="frame" x="59" y="550" width="250" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Button4Action:" destination="5gI-OT-ebQ" eventType="touchUpInside" id="0YF-jj-riY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bX6-IF-86f">
+                                <rect key="frame" x="118" y="371" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BKq-tO-y5i"/>
+                    <connections>
+                        <outlet property="Button1" destination="DxN-FP-o6X" id="GM5-kz-KHs"/>
+                        <outlet property="Button2" destination="LNh-z6-p5n" id="kzn-bh-pGA"/>
+                        <outlet property="Button3" destination="DTh-54-bbD" id="vdu-ar-B6F"/>
+                        <outlet property="Button4" destination="zwq-I4-ycf" id="rWd-36-pwU"/>
+                        <outlet property="ImageView" destination="Oet-RJ-ZIB" id="GLc-ik-dGO"/>
+                        <outlet property="ResultLabel" destination="bX6-IF-86f" id="zjM-dd-jtz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lau-OQ-vfm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40" y="654"/>
         </scene>
         <!--Master-->
         <scene sceneID="VgW-fR-Quf">
@@ -65,6 +139,7 @@
         <!--Detail-->
         <scene sceneID="Cn3-H9-jdl">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
                 <viewController title="Detail" id="Ah7-4n-0Wa" customClass="DetailViewController" customModule="BabyUnicorn" customModuleProvider="target" sceneMemberID="viewController">
                     <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="sgf-Z5-MbO">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -75,7 +150,6 @@
                         <outlet property="NLImage" destination="sgf-Z5-MbO" id="T53-DV-oBq"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1343" y="64"/>
         </scene>
