@@ -15,6 +15,7 @@
 		367899E11976DD7300CB1AEF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 367899E01976DD7300CB1AEF /* Images.xcassets */; };
 		367899ED1976DD7400CB1AEF /* TipCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367899EC1976DD7400CB1AEF /* TipCalculatorTests.swift */; };
 		367899F71976DDB500CB1AEF /* TipCalculatorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 367899F61976DDB500CB1AEF /* TipCalculatorModel.swift */; };
+		36D8B7FC1A1BBF940050AB54 /* robert.png in Resources */ = {isa = PBXBuildFile; fileRef = 36D8B7FB1A1BBF940050AB54 /* robert.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		367899EB1976DD7400CB1AEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		367899EC1976DD7400CB1AEF /* TipCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCalculatorTests.swift; sourceTree = "<group>"; };
 		367899F61976DDB500CB1AEF /* TipCalculatorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipCalculatorModel.swift; sourceTree = SOURCE_ROOT; };
+		36D8B7FB1A1BBF940050AB54 /* robert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = robert.png; path = images/robert.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				367899DD1976DD7300CB1AEF /* Main.storyboard */,
 				367899E01976DD7300CB1AEF /* Images.xcassets */,
 				36277BD21A1AB2EC006291A2 /* thor.png */,
+				36D8B7FB1A1BBF940050AB54 /* robert.png */,
 				367899D71976DD7300CB1AEF /* Supporting Files */,
 			);
 			path = TipCalculator;
@@ -202,6 +205,7 @@
 				367899DF1976DD7300CB1AEF /* Main.storyboard in Resources */,
 				367899E11976DD7300CB1AEF /* Images.xcassets in Resources */,
 				36277BD31A1AB2EC006291A2 /* thor.png in Resources */,
+				36D8B7FC1A1BBF940050AB54 /* robert.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A388b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zSJ-gP-mMI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cFf-Y8-2B8">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
@@ -116,33 +116,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2RL-Hv-3Wz">
-                                <rect key="frame" x="16" y="72" width="435" height="225"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" text="Who is this?" translatesAutoresizingMaskIntoConstraints="NO" id="Iwn-Kr-Cdj">
+                                <rect key="frame" x="146" y="72" width="309" height="47"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <accessibility key="accessibilityConfiguration" label="jakobs label for text">
-                                    <bool key="isElement" value="NO"/>
-                                </accessibility>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="ERV-Ti-0ch"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="thor.png" translatesAutoresizingMaskIntoConstraints="NO" id="qE4-O4-3Vy">
-                                <rect key="frame" x="16" y="315" width="168" height="213"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="BNs-xC-0yk" appends="YES" id="def-8w-jFi"/>
-                                </connections>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="thor.png" translatesAutoresizingMaskIntoConstraints="NO" id="lAG-mi-kzX">
+                                <rect key="frame" x="222" y="374" width="168" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="AMD-F2-XXR"/>
+                                    <constraint firstAttribute="height" constant="213" id="S5g-bN-Bbd"/>
+                                </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYi-Rx-noJ">
+                                <rect key="frame" x="188" y="298" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oe5-6l-vsa">
+                                <rect key="frame" x="188" y="229" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="nameTopRight:" destination="cFf-Y8-2B8" eventType="touchUpInside" id="4f5-Cy-AhK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsS-lr-vIR">
+                                <rect key="frame" x="415" y="229" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0d-np-TNg">
+                                <rect key="frame" x="415" y="298" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="qE4-O4-3Vy" firstAttribute="top" secondItem="2RL-Hv-3Wz" secondAttribute="bottom" constant="28" id="ON9-OF-5cI"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="qE4-O4-3Vy" secondAttribute="bottom" constant="-151" id="mlR-iF-w0q"/>
+                            <constraint firstItem="Iwn-Kr-Cdj" firstAttribute="leading" relation="lessThanOrEqual" secondItem="1jc-C6-EL4" secondAttribute="leadingMargin" constant="140" id="8iv-8U-F9h"/>
+                            <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="Iwn-Kr-Cdj" secondAttribute="trailing" constant="119" id="Dkb-5d-R0z"/>
+                            <constraint firstItem="BVr-ic-PZ8" firstAttribute="top" secondItem="lAG-mi-kzX" secondAttribute="bottom" constant="14" id="FsP-0r-bMG"/>
+                            <constraint firstAttribute="centerX" secondItem="lAG-mi-kzX" secondAttribute="centerX" id="SAu-0N-PBh"/>
+                            <constraint firstItem="Iwn-Kr-Cdj" firstAttribute="top" secondItem="fOB-44-G0A" secondAttribute="bottom" id="zkW-Z1-BCR"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageListener" destination="BNs-xC-0yk" id="r1S-gr-MDu"/>
-                        <outlet property="textView" destination="2RL-Hv-3Wz" id="6Zy-HG-jij"/>
+                        <outlet property="mainImage" destination="lAG-mi-kzX" id="A3c-bR-DxW"/>
+                        <outlet property="textView" destination="Iwn-Kr-Cdj" id="EsS-Hs-g1M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WK6-Yt-TPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
