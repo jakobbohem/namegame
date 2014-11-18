@@ -13,19 +13,25 @@ class ToolViewController: UIViewController { // should the viewController also b
 
     @IBOutlet var textView: UITextView!
     // 'view' implicitly defined here?
+    @IBOutlet weak var mainImage: UIImageView!
     @IBOutlet var imageListener: UITapGestureRecognizer!
     @IBAction func imageTapped(sender: AnyObject) {
         print("I got tapped")
     }
 
+
     // Model connection
     let tipCalc = TipCalculatorModel(total: 100, percent: 0.1)
     var possibleTips = Dictionary<Int, (tip:Double, total:Double)>()
     var sortedKeys:[Int] = []
+    var imageId:String = "" // note: always use init values
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        // save original image id
+        imageId = mainImage.image!.description
+
         refreshUI();
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -54,6 +60,18 @@ class ToolViewController: UIViewController { // should the viewController also b
         
     }
     
-    
+    // UI Actions
+    @IBAction func nameTopRight(sender: AnyObject) {
+        //        debugInfo =
+        print("replacing image \(mainImage.image)")
+        // replace image
+        if(mainImage.image?.description == self.imageId) {
+            mainImage.image = UIImage(named: "robert.png")
+        }
+        else {
+            mainImage.image = UIImage(named: "thor.png")
+        }
+        
+    }
     
 }
